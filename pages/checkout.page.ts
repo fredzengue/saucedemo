@@ -12,17 +12,20 @@ export class checkoutPage {
     readonly finishButton: Locator;
     readonly cancelButton: Locator;
     readonly checkoutContainer: Locator;
+    readonly removeArticleButton: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.panierButon = page.locator("#shopping_cart_container");
         this.checkoutButon = page.locator("#checkout");
-        this.firstname = page.locator("# first-name");
-        this.lastname = page.locator("# last-name");
-        this.zipcode = page.locator("# postal-code");
+        this.firstname = page.locator("#first-name");
+        this.lastname = page.locator("#last-name");
+        this.zipcode = page.locator("#postal-code");
         this.continueButton = page.locator("#continue");
         this.cancelButton = page.locator("#cancel");
+        this.finishButton = page.locator("#finish");
         this.checkoutContainer = page.locator("#checkout_complete_container");
+        this.removeArticleButton = page.locator("#remove-sauce-labs-backpack")
         
     }
 
@@ -32,33 +35,46 @@ export class checkoutPage {
     }
 
     clickPanierButon(){
-        this.panierButon.click();
+        return this.panierButon.click();
     }
 
     async clickcheckoutButon(){
-        await this.checkoutButon.click()
+        return this.checkoutButon.click()
     }
 
 
-    saisirFirstname(firstname: string){
-        return this.firstname.fill(firstname);
+    async saisirFirstname(firstname: string){
+        await this.firstname.fill(firstname);
     }
 
 
-    saisirLastname(firstname: string){
-        return this.firstname.fill(firstname);
+    async saisirLastname(lastname: string){
+        await this.lastname.fill(lastname);
     }
 
-    saisirZipCode(zipcode: string){
-        return this.zipcode.fill(zipcode);
+    async saisirZipCode(zipcode: string){
+        await this.zipcode.fill(zipcode);
     }
 
     async clickContinueButon(){
-        await this.continueButton.click();
+        return this.continueButton.click();
     }
 
     async clickCancelButon(){
-        await this.cancelButton.click();
+        return this.cancelButton.click();
     }
 
+ 
+
+    async clickcheckoutlButon(){
+        return this.checkoutButon.click();
+    }
+
+    async clickcfinishlButon(){
+        return this.finishButton.click();
+    }
+
+    async clickcRemoveArticle(){
+        return this.removeArticleButton.click();
+    }
 }
