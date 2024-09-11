@@ -14,7 +14,7 @@ export class PanierPage {
     this.page = page;
     this.cartIcon = page.locator("#shopping_cart_container a");
     this.listItems = page.locator("#cart_contents_container div");
-    this.addToCartButton = page.locator("#add-to-cart-sauce-labs-backpack");
+    this.addToCartButton = page.locator('button[data-test="add-to-cart"]');
     this.loginPage = new LoginPage(page);
   }
 
