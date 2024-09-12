@@ -8,6 +8,7 @@ export  class AllItemsPages{
     readonly closeHumburgerBtn: Locator;
     readonly getTitleEl: Locator;
     readonly firstProductEl: Locator;
+    readonly cardbutton :Locator ;
 
     constructor(page: Page){
         this.page = page;
@@ -16,6 +17,7 @@ export  class AllItemsPages{
         this.closeHumburgerBtn = page.locator("[id='react-burger-cross-btn']")
         this.getTitleEl = page.locator("//span[@data-test='title']")
         this.firstProductEl = page.locator("[data-test='inventory-item-name']")
+        this.cardbutton = page.locator("#add-to-cart-sauce-labs-backpack")
     }
 
     async goto(link: string){
@@ -41,6 +43,10 @@ export  class AllItemsPages{
         const isVisible = await this.firstProductEl.isVisible();
         return isVisible;
       }
+
+    async clickAddcard(){
+        return this.cardbutton.click();
+    }
     
 
 }
