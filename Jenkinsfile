@@ -7,7 +7,7 @@ pipeline{
             }
         }
 
-         stage('npm install npx'){
+        stage('npm install npx'){
              
             steps{
                 
@@ -17,7 +17,7 @@ pipeline{
 
         }
 
-        stage('execution des tests'){
+        stage('install playwright'){
              
             steps{
                 
