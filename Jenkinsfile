@@ -7,7 +7,7 @@ pipeline{
             }
         }
 
-         stage('execution des tests'){
+         stage('npm install npx'){
              
             steps{
                 
