@@ -17,11 +17,5 @@ pipeline{
 
         }
     }
-    post{
-        always{
-            sh 'echo "affichage du rapport"'
-            junit "target/surefire-reports/**/*.xml"
-        }
-        
-    }
+   
 }
