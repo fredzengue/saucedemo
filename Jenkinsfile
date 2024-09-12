@@ -11,7 +11,17 @@ pipeline{
              
             steps{
                 
-                sh 'npx playwright install'
+                sh 'npm  install npx'
+                
+             }
+
+        }
+
+        stage('execution des tests'){
+             
+            steps{
+                
+                sh 'npm install playwright '
                 
              }
 
