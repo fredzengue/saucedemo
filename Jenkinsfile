@@ -11,7 +11,7 @@ pipeline{
              
             steps{
                 
-                sh 'npx test end_to_end'
+                sh 'npx playwright test'
                 
              }
 
