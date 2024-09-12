@@ -1,0 +1,20 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="4.599495">
+<testsuite name="end_to_end.spec.ts" timestamp="2024-09-12T14:29:16.258Z" hostname="chromium" tests="2" failures="0" skipped="0" time="2.334" errors="0">
+<testcase name="All products items" classname="end_to_end.spec.ts" time="1.154">
+</testcase>
+<testcase name="passer une commande avec panier vide" classname="end_to_end.spec.ts" time="1.18">
+</testcase>
+</testsuite>
+<testsuite name="end_to_end.spec.ts" timestamp="2024-09-12T14:29:16.258Z" hostname="firefox" tests="2" failures="0" skipped="0" time="3.767" errors="0">
+<testcase name="All products items" classname="end_to_end.spec.ts" time="1.859">
+</testcase>
+<testcase name="passer une commande avec panier vide" classname="end_to_end.spec.ts" time="1.908">
+</testcase>
+</testsuite>
+<testsuite name="end_to_end.spec.ts" timestamp="2024-09-12T14:29:16.258Z" hostname="webkit" tests="2" failures="0" skipped="0" time="3.577" errors="0">
+<testcase name="All products items" classname="end_to_end.spec.ts" time="1.773">
+</testcase>
+<testcase name="passer une commande avec panier vide" classname="end_to_end.spec.ts" time="1.804">
+</testcase>
+</testsuite>
+</testsuites>
