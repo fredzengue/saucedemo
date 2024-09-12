@@ -31,7 +31,7 @@ pipeline{
              
             steps{
                 
-                sh 'npx playwright test'
+                sh 'npx playwright test end_to_end '
                 
              }
 
